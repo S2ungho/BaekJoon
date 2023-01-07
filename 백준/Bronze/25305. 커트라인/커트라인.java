@@ -1,27 +1,14 @@
 import java.util.*;
-
-public class Main{
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int N = sc.nextInt();
-        int k = sc.nextInt();
-        int x[] = new int[N];
-
-        for (int i = 0; i < N; i++){
-            x[i] = sc.nextInt();
+public class Main {  //퍼온 문제
+    public static void main(String args[]){
+        Scanner scanner=new Scanner(System.in);
+        int n=scanner.nextInt();
+        int k=scanner.nextInt();
+        Integer arr[]=new Integer[n];
+        for(int i=0;i<n;i++){
+            arr[i]=scanner.nextInt();
         }
-        int tmp,max = 0;
-        for(int i = 0; i < x.length; i++){
-            for(int j = i; j < x.length; j++){
-                if(x[i] < x[j]){
-                    tmp = x[j];
-                    x[j] = x[i];
-                    x[i] = tmp;
-                }
-            }
-        }
-        //for(int i = 0; i < N; i++){
-        System.out.println(x[k-1]); //k-1
-        //}
+        Arrays.sort(arr,Collections.reverseOrder());
+        System.out.println(arr[k-1]);
     }
 }
