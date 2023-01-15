@@ -11,20 +11,13 @@ public class Main {
             int sum = 0, cnt = 0;
             for(int j = 0; j < arr[i].length(); j++) {
                 if (arr[i].charAt(j) == 'O') {
-                    cnt++;
+                    cnt = cnt + 1;
                 }else{
                     cnt = 0;
                 }
-                sum += cnt;
+                sum = sum + cnt;
             }
             System.out.println(sum);
         }
     }
 }
-/*
-5
-OOXXOXXOOO
-OOXXOOXXOO
-OXOXOXOXOXOXOX
-OOOOOOOOOO
-OOOOXOOOOXOOOOX*/
