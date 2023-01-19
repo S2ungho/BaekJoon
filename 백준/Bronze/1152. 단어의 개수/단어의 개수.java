@@ -1,5 +1,4 @@
-import java.util.Scanner;
-import java.util.StringTokenizer;
+import java.util.*;
 
 public class Main {
 
@@ -7,12 +6,12 @@ public class Main {
         Scanner in = new Scanner(System.in);
 
         String S = in.nextLine();
-        in.close();
+        //in.close();
 
-        // st 에 공백을 기준으로 나눈 토큰들을 st 에 저장한다
+        //st에 공백을 기준으로 나눈 토큰들을 st에 저장
         StringTokenizer st = new StringTokenizer(S," ");
 
-        // countTokens() 는 토큰의 개수를 반환한다
+        //countTokens()는 토큰의 개수를 반환
         System.out.println(st.countTokens());
 
     }
