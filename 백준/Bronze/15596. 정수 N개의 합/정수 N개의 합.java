@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class Test {
     long sum(int[] a) {
         long ans = 0;
@@ -7,7 +9,3 @@ public class Test {
         return ans;
     }
 }
-/*    public static void main(String[] args) {
-        int[] n = {1, 2, 3, 4, 5, 6};
-        System.out.println(sum(n));
-    }*/
