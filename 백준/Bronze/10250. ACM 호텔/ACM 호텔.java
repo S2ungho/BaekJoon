@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
  
 public class Main {
 	public static void main(String[] args) {
@@ -16,7 +16,8 @@ public class Main {
 			if(N % H == 0) {
 				System.out.println((H * 100) + (N / H));
  
-			} else {
+			} 
+            else {
 				System.out.println(((N % H) * 100) + ((N / H) + 1));
 			}
 		}
