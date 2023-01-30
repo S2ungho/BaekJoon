@@ -16,7 +16,7 @@ public class Main {
             avg = sum / S;
             for(int k = 0; k < S; k++){
                 if (arr[k] > avg){
-                    cnt++;
+                    cnt = cnt + 1;
                 }
             }
             System.out.printf("%.3f%%\n", 100.0 * cnt / S);
